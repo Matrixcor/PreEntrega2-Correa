@@ -1,0 +1,175 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+@font-face {
+    font-family: "Urae_Nium";
+    src: url("../fonts/urae_nium/urae_nium.ttf");
+}
+@font-face {
+    font-family: "Run";
+    src: url("../fonts/run_2/Run!\ Demo.otf");
+}
+body{
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+.Encabezado{
+    background-color: black;
+    text-align: center;
+}
+.Encabezado__Nombre{
+    font-family: "Urae_Nium",italic;
+    color: aliceblue;
+    font-size: 6em;
+}
+.jc-barra{
+    margin: auto;
+}
+.Banner{
+    width: 99vw;
+    background-color: black;
+    margin: auto;
+    text-align: center;
+}
+.Banner__carrusel{
+    width: 75%;
+    margin: auto;
+    padding: 20px 0px;
+}
+.Carrousel__Titulo{
+    font-family: "Run";
+}
+.Contenedor{
+    display: flex;
+    justify-content: center;
+}
+.lateral{
+    width: 13vw;
+    text-align: left;
+}
+.centro{
+    width: 70vw;
+}
+.block{
+    display: block;
+}
+.Principal{
+    width: 99vw;
+    text-align: center;
+}
+.Principal__Buscador{
+    justify-content: center;
+    padding: 10px;
+}
+/*esto es para tienda*/
+.Principal--tienda{
+    width: 77vw;
+    padding-left: 1vw;
+    text-align: center;
+}
+.Principal--nosotros{
+    width: 90vw;
+    margin: auto;
+}
+.Principal__Secciones{
+    width: 99vw;
+    padding: 3vw 0.7vw;
+    background-color: aliceblue; 
+}
+.Principal__Secciones--tienda{
+    padding: 5vw 0.7vw;
+    background-color: aliceblue; 
+}
+.Principal__Secciones--modificacion{
+    padding: 3vw 0.7vw;
+    background-color: #E8E8E8;
+}
+.Articulo {
+  width: 90vw;
+  margin: auto;
+  background-color: antiquewhite; }
+  .Articulo__Seccion {
+    width: 75vw; }
+.Secciones__Contenido{
+    width: 90vw;
+    margin: auto;
+}
+.Secciones__Titulo{
+    padding-bottom: 1vw;
+}
+.card__titulo{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Principal__Acceso{
+    display: flex;
+    justify-content: center;
+    padding: 2vw 0vw;
+}
+.Acceso__Imagen{
+    width: 50vw;
+}
+.Acceso__Formulario{
+    padding: 0vw 1vw;
+}
+.Principal__Texto{
+    font-size: 1.3em;
+    text-align: justify;
+}
+.Pie{
+    background-color: black;
+    justify-items: center;
+}
+.Pie__Contenedor{
+    width: 90vw;
+    display: flex;
+    margin: auto;
+    color: white;
+}
+/* inserto animaciones*/
+.Animacion:hover{
+    transform: scale(1.05);
+}
+.Bordes:hover{
+    border-bottom: solid 2px black;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (min-width:320px) and (max-width:992px){ /*aplique el ancho de 992px siguiendo el break point de bootstrap para las secciones*/
+    .Encabezado__Nombre{
+        font-family: "Urae_Nium",italic;
+        color: aliceblue;
+        font-size: 4em; /*10vw*/
+    }
+    .Banner__carrusel{
+        width: 100%;
+        margin: auto;
+        padding: 20px 0px;
+    }
+    .Carrousel__Titulo{
+        font-size: 1.2em; /*16px*/
+        font-family: "Run";
+    }
+    .lateral{
+        width: 30vw;
+        text-align: left;
+    }
+    .Principal__Acceso{
+        display: block;
+        margin: auto;
+        padding: 2vw 0vw;
+    }
+    .Acceso__Imagen{
+        width: 60vw;
+    }
+    .Pie__Contenedor{
+        width: 90vw; 
+        display: block;
+        margin: auto;
+    }
+}
