@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- coloco bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- coloco estilo css-->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- coloco estilo css -->
+    <link rel="stylesheet" href="../css/styles.css">
 
     <title>NO GRAVITY - Ejercicios</title>
 </head>
@@ -15,68 +15,67 @@
     <header class="Encabezado">
         <h1 class="Encabezado__Nombre">NO GRAVITY</h1> 
     </header>
-    <nav class="navbar navbar-expand-lg bg-light jc-center">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="Barra navbar navbar-expand-lg">
+        <div class="Barra__Contenido container-fluid">
+            <button class="Barra__Contenido--Boton navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse jc-center" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 jc-barra" aria-hidden="true"></i>
-                    <li class="nav-item Bordes">
+            <div class="Barra__Contenido--Opciones collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="Opciones navbar-nav me-auto mb-lg-0" aria-hidden="true"></i>
+                    <li class="Opciones__Bordes nav-item">
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
-                    <li class="nav-item Bordes">
+                    <li class="Opciones__Bordes nav-item">
                         <a class="nav-link" href="empresa.html">Nosotros</a>
                     </li>
-                    <li class="nav-item Bordes">
+                    <li class="Opciones__Bordes nav-item">
                         <a class="nav-link active" aria-current="page" href="ejercicios.html">Ejercicios</a>
                     </li>
-                    <li class="nav-item Bordes">
+                    <li class="Opciones__Bordes nav-item">
                         <a class="nav-link" href="productos.html">Tienda</a>
                     </li>
-                    <li class="nav-item Bordes">
+                    <li class="Opciones__Bordes nav-item">
                         <a class="nav-link" href="nutricion.html">Nutricion</a>
                     </li>
-                    <li class="nav-item Bordes">
+                    <li class="Opciones__Bordes nav-item">
                         <a class="nav-link" href="acceso.html">Acceso</a>
                     </li>              
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="Banner"> 
-        <div id="carouselExampleSlidesOnly" class="carousel slide Banner__carrusel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/carousel/banner-ejercicio/workout-banner.png" class="d-block w-100" alt="Varios deportes">
-                    <div class="carousel-caption d-block">
-                        <h2 class="Carrousel__Titulo">No lo dudes, Hazlo</h2>
-                    </div>
+    <div class="Banner carousel slide" id="carouselExampleSlidesOnly" data-bs-ride="carousel">
+        <div class="Banner__carrusel carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/carousel/banner-ejercicio/workout-banner.png" class="d-block w-100" alt="Varios deportes">
+                <div class="carousel-item__Titulo carousel-caption d-block">
+                    <h2 class="carousel-item__Titulo--Texto">No lo dudes, Hazlo</h2>
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/carousel/banner-ejercicio/banner-ejercicioss.jpg" class="d-block w-100" alt="Hombre corriendo">
-                    <div class="carousel-caption d-block">
-                        <h2 class="Carrousel__Titulo">Los limites los pones tu</h2>
-                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/carousel/banner-ejercicio/banner-ejercicioss.jpg" class="d-block w-100" alt="Hombre corriendo">
+                <div class="carousel-item__Titulo carousel-caption d-block">
+                    <h2 class="carousel-item__Titulo--Texto">Los limites los pones tu</h2>
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/carousel/banner-ejercicio/man-banner.png" class="d-block w-100" alt="Hombre haciendo flexion de brazo">
-                    <div class="carousel-caption d-block">
-                        <h2 class="Carrousel__Titulo">Siempre al 100%</h2>
-                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/carousel/banner-ejercicio/man-banner.png" class="d-block w-100" alt="Hombre haciendo flexion de brazo">
+                <div class="carousel-item__Titulo carousel-caption d-block">
+                    <h2 class="carousel-item__Titulo--Texto">Siempre al ciento por ciento</h2>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <main class="Principal">
-        <section class="Principal__Secciones">
-            <h2 class="Secciones__Titulo">WORKOUT</h2>
-            <div class="Secciones__Contenido row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <section class="Principal__Seccion">
+            <h2 class="Principal__Seccion--Titulo">WORKOUT</h2>
+            <div class="Principal__Seccion--Contenido row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
                 <article class="col">
                     <div class="card Animacion">
                         <img src="../img/ejercicios/Weightlifting.jpg" class="card-img-top" alt="Mujer haciendo peso muerto">
                         <div class="card-body">
-                            <h5 class="card-title">Peso muerto</h5>
+                            <h5 class="card__titulo">Peso muerto</h5>
                         </div>
                     </div>
                 </article>
@@ -84,7 +83,7 @@
                     <div class="card Animacion">
                         <img src="../img/ejercicios/hammer.jpg" class="card-img-top" alt="Hombre haciendo biceps con mancuernas">
                         <div class="card-body">
-                            <h5 class="card-title">Biceps</h5>
+                            <h5 class="card__titulo">Biceps</h5>
                         </div>
                     </div>
                 </article>
@@ -92,7 +91,7 @@
                     <div class="card Animacion">
                         <img src="../img/ejercicios/PES.jpg" class="card-img-top" alt="Press de banca">
                         <div class="card-body">
-                            <h5 class="card-title">Press militar</h5>
+                            <h5 class="card__titulo">Press militar</h5>
                         </div>
                     </div>
                 </article>
@@ -100,20 +99,20 @@
                     <div class="card Animacion">
                         <img src="../img/ejercicios/brazo-workouts.jpg" class="card-img-top" alt="Jalones de cuerda">
                         <div class="card-body">
-                            <h5 class="card-title">Espalda</h5>
+                            <h5 class="card__titulo">Espalda</h5>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
-        <section class="Principal__Secciones--modificacion">
-            <h2 class="Secciones__Titulo"> CALISTENIA </h2>
-            <div class="Secciones__Contenido row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <section class="Principal__Seccion-central">
+            <h2 class="Principal__Seccion-central--Titulo"> CALISTENIA </h2>
+            <div class="Principal__Seccion-central--Contenido row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
                 <article class="col">
                     <div class="card Animacion">
                         <img src="../img/ejercicios/isome-calistenia-modif.jpg" class="card-img-top" alt="Ejercicio isometrico calistenia">
                         <div class="card-body">
-                            <h5 class="card-title">Isometricos</h5>
+                            <h5 class="card__titulo">Isometricos</h5>
                         </div>
                     </div>
                 </article>
@@ -121,7 +120,7 @@
                     <div class="card Animacion">
                         <img src="../img/ejercicios/isometri-cali-rutine-modif.jpg" class="card-img-top" alt="Rutinas de calistenia">
                         <div class="card-body">
-                            <h5 class="card-title">Rutinas calistenia</h5>
+                            <h5 class="card__titulo">Rutinas calistenia</h5>
                         </div>
                     </div>
                 </article>
@@ -129,7 +128,7 @@
                     <div class="card Animacion">
                         <img src="../img/ejercicios/isometrico-abdomen-modif.jpg" class="card-img-top" alt="Plancha abdomen">
                         <div class="card-body">
-                            <h5 class="card-title">Isometricos abdomen</h5>
+                            <h5 class="card__titulo">Isometricos abdomen</h5>
                         </div>
                     </div>
                 </article>
@@ -137,20 +136,20 @@
                     <div class="card Animacion">
                         <img src="../img/ejercicios/human-flag-calisteniass.png" class="card-img-top" alt="human flag">
                         <div class="card-body">
-                            <h5 class="card-title">Human flag</h5>
+                            <h5 class="card__titulo">Human flag</h5>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
-        <section class="Principal__Secciones">
-            <h2 class="Secciones__Titulo">RUNNING</h2>
-            <div class="Secciones__Contenido row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <section class="Principal__Seccion">
+            <h2 class="Principal__Seccion--Titulo">RUNNING</h2>
+            <div class="Principal__Seccion--Contenido row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
                 <article class="col">
                     <div class="card Animacion">
                         <img src="../img/ejercicios/rutina-sprint-para-principiantes.jpg" class="card-img-top" alt="Ejercicio sprint para principiante">
                         <div class="card-body">
-                            <h5 class="card-title">Sprint</h5>
+                            <h5 class="card__titulo">Sprint</h5>
                         </div>
                     </div>
                 </article>
@@ -158,7 +157,7 @@
                     <div class="card Animacion">
                         <img src="../img/ejercicios/maxresdefault-modif.jpg" class="card-img-top" alt="Rutina running para principiante">
                         <div class="card-body">
-                            <h5 class="card-title">Rutinas</h5>
+                            <h5 class="card__titulo">Rutinas</h5>
                         </div>
                     </div>
                 </article>
@@ -166,15 +165,52 @@
                     <div class="card Animacion">
                         <img src="../img/ejercicios/prueba-rendimiento-modif.jpg" class="card-img-top" alt="Pruebas de rendimiento running">
                         <div class="card-body">
-                            <h5 class="card-title">Rendimiento</h5>
+                            <h5 class="card__titulo">Rendimiento</h5>
                         </div>
                     </div>
                 </article>
                 <article class="col">
                     <div class="card Animacion">
-                        <img src="../img/ejercicios/running-calentamientoss.jpg" class="card-img-top" alt="calentamiento"">
+                        <img src="../img/ejercicios/running-calentamientoss.jpg" class="card-img-top" alt="calentamiento">
                         <div class="card-body">
-                            <h5 class="card-title">Calentaminento</h5>
+                            <h5 class="card__titulo">Calentaminento</h5>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="Principal__Seccion-central">
+            <h2 class="Principal__Seccion-central--Titulo">FUNCIONAL</h2>
+            <div class="Principal__Seccion-central--Contenido row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+                <article class="col">
+                    <div class="card Animacion">
+                        <img src="../img/ejercicios/flexiones.png" class="card-img-top" alt="Ejercicio Flexiones de brazo estrictas">
+                        <div class="card-body">
+                            <h5 class="card__titulo">Flexiones</h5>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card Animacion">
+                        <img src="../img/ejercicios/zancadas.png" class="card-img-top" alt="Mujer haciendoEjercicio de zancadilla">
+                        <div class="card-body">
+                            <h5 class="card__titulo">Zancadillas</h5>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card Animacion">
+                        <img src="../img/ejercicios/sentadillas.png" class="card-img-top" alt="Mujer haciendo sentadillas Hacks">
+                        <div class="card-body">
+                            <h5 class="card__titulo">Sentadillas</h5>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card Animacion">
+                        <img src="../img/ejercicios/elevacion_de_rodillas.png" class="card-img-top" alt="Mujer haciendo elevacion de rodillas">
+                        <div class="card-body">
+                            <h5 class="card__titulo">Rutinas Funcional</h5>
                         </div>
                     </div>
                 </article>

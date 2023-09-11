@@ -1,0 +1,7 @@
+//barra de navegacion con bootstrap, no le agregue muchos estilo aun
+@import "../base/colors";
+.Barra{
+    width: 99vw;
+    margin: auto;
+    background-color: $color-navbar;
+}

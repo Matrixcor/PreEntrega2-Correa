@@ -1,0 +1,37 @@
+//tuve inconvenientes con el nesting, no me funcionaba el media.
+@media screen and (min-width:320px) and (max-width:992px){ //aplique el ancho de 992px siguiendo el break point de bootstrap para las secciones
+    .Encabezado__Nombre{
+        font-family: "Urae_Nium",italic;
+        color: $color-titulo-header;
+        font-size: $size-tituloMediaQ;
+    }
+    .Banner__carrusel{
+        width: 100%;
+        margin: auto;
+        padding: 20px 0px; 
+    }
+    .Carrousel__Titulo{
+        font-size: $size-titulo-carruselMediaQ;
+        font-family: "Run";
+    }
+    .Opciones__Item{
+        width: 30vw;
+        text-align: left;
+    }
+    .Principal__Acceso{
+        display: block;
+        margin: auto;
+        padding: 2vw 0vw;
+    }
+    .Acceso__Imagen{
+        width: 60vw;
+    }
+    .Pie__Contenedor{
+        display: block;
+        margin: auto;
+        width: 90vw; 
+    }
+    .Animacion:hover{
+        transform: scale(1);
+    }
+}

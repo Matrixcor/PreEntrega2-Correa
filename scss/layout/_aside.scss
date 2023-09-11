@@ -1,0 +1,14 @@
+.Opciones__Item{
+    width: map-get($ancho-tienda, ancho-filtro);
+    text-align: left;
+}
+
+//contenido relacionado seccion articulos
+
+.Articulo__Relacionado{
+    width: map-get($ancho-articulos , ancho-aside);
+    padding: 15px;
+    &--Lista{
+        list-style: none;
+    }
+}
