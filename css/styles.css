@@ -120,7 +120,8 @@ body {
 
 .Pie {
   background-color: black;
-  justify-items: center; }
+  justify-items: center; 
+  margin-top: 10px;}
 
 .Pie__Contenedor {
   width: 90vw;
